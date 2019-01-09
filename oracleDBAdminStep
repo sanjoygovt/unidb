@@ -37,5 +37,15 @@ Password: 1
 Create new user & go ahead.
 ------------------------------------------------------------------------------------------------------------
 Basic commands:
+SELECT TO_CHAR(SYSDATE) Today FROM DUAL;
+SELECT SYSDATE FROM DUAL;
+SELECT username FROM  sys.all_users;
+SELECT * FROM  user_tables;
+-------------------------------------
+create table teacher (t_no number, f_name varchar2(20), l_name varchar2(20), salary number, supervisor varchar2(30), joiningdate date,
+birthdate date, title varchar2(20)) ;
+insert into teacher values(1, 'San', 'Sarkar', 200000, 'M. John', '01/01/2020', '01/01/1993', 'Security Analyst');
+select * from teacher;
+DELETE FROM teacher WHERE t_no='1';
 
 
