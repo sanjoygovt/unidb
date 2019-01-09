@@ -49,4 +49,6 @@ insert into teacher values(5, 'K', 'Tithi', 54000, 'S. Sarkar', '02/12/2019', '0
 select * from teacher;
 DELETE FROM teacher WHERE t_no='1';
 
+create table payscale (Min_limit number, Max_limit number, grade varchar2(20)); 
+create table class (class_no number, t_no number, room_no number); 
 
