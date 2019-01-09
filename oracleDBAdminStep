@@ -1,0 +1,30 @@
+OracleXE112_Win64
+On setup password will be used for SYS or SYSTEM
+
+Connection Step: Open Run SQL Command Line
+SQL*Plus: Release 11.2.0.2.0 Production on Wed Jan 9 09:00:25 2019
+Copyright (c) 1982, 2014, Oracle.  All rights reserved.
+
+SQL> connect
+Enter user-name: sys
+Enter password: 1
+ERROR:
+ORA-28009: connection as SYS should be as SYSDBA or SYSOPER
+
+
+SQL> connect
+Enter user-name: system
+Enter password:
+Connected.
+SQL> disconnect
+Disconnected from Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+SQL> connect /as sysdba
+Connected.
+SQL> disconnect
+Disconnected from Oracle Database 11g Express Edition Release 11.2.0.2.0 - 64bit Production
+SQL> connect SYSTEM/oracle
+ERROR:
+ORA-01017: invalid username/password; logon denied
+
+
+C:\oraclexe\app\oracle\product\11.2.0\server
