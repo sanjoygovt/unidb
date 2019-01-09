@@ -45,6 +45,7 @@ SELECT * FROM  user_tables;
 create table teacher (t_no number, f_name varchar2(20), l_name varchar2(20), salary number, supervisor varchar2(30), joiningdate date,
 birthdate date, title varchar2(20)) ;
 insert into teacher values(1, 'San', 'Sarkar', 200000, 'M. John', '01/01/2020', '01/01/1993', 'Security Analyst');
+insert into teacher values(5, 'K', 'Tithi', 54000, 'S. Sarkar', '02/12/2019', '01/17/1993', 'Engineer');
 select * from teacher;
 DELETE FROM teacher WHERE t_no='1';
 
